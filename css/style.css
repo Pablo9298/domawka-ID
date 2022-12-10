@@ -47,6 +47,7 @@ body {
   border-right: 3px solid rgba(39, 227, 186, 0.801);
   font-size: 12px;
   color: rgba(255, 255, 255, 0.44);
+  letter-spacing: 5px;
 }
 
 .wrapper input {
@@ -68,7 +69,6 @@ body {
   display: inline-block;
   border: 3px solid rgba(39, 227, 186, 0.801);
   background-color: transparent;
-  /* background-color: rgba(39, 227, 186, 0.801); */
   font-size: 16px;
   height: 40px;
   width: 100px;
@@ -76,30 +76,31 @@ body {
   cursor: pointer;
   border-radius: 8px;
   position: relative;
+  overflow: hidden;
   transition: all 0.5s ease-in-out;
 }
 
 .wrapper button:hover {
-  color: black;
+  font-weight: bolder;
 }
 
 .wrapper button::before {
   content: '';
   position: absolute;
   z-index: -1;
-  left: 100%;
-  top: 100%;
-  background-color: #fff;
+  left: 0;
+  right: 0;
+  top: -110%;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
   transition: all 0.5s ease-in-out;
 }
 
 .wrapper button:hover::before {
-  left: 0;
-  right: 0;
   top: 0;
-  bottom: 0;
-  border-radius: 8px;
-  outline: 3px solid rgba(39, 227, 186, 0.801);
+  outline: 4px solid rgba(39, 227, 186, 0.801);
   background-color: rgba(39, 227, 186, 0.801);
 }
 
