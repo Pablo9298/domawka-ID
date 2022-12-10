@@ -81,7 +81,8 @@ body {
 }
 
 .wrapper button:hover {
-  font-weight: bolder;
+  font-weight: bold;
+  letter-spacing: 2.5px;
 }
 
 .wrapper button::before {
