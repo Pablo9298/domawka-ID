@@ -146,3 +146,7 @@ function showResult() {
 
 const btn = document.querySelector('#check-id');
 btn.addEventListener('click', showResult);
+
+btn.addEventListener('click', function() {
+  idCodeInput.value = '';
+});
